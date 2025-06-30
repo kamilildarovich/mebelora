@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mebelora — Главная</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+
+<style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #2b2b2b;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      color: #c7965b;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      padding: 2rem;
+    }
+    .sidebar {
+      width: 220px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding: 1rem;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+    .sidebar li i {
+      font-size: 1.1rem;
+      color: #c7965b;
+    }
+    .main-content {
+      flex: 1;
+      padding-left: 2rem;
+    }
+    .banner {
+      background: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .banner h2 {
+      margin: 0 0 1rem 0;
+    }
+    .banner p {
+      margin: 0 0 1rem 0;
+    }
+    .banner button {
+      padding: 0.6rem 1.2rem;
+      background: #b25536;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .features {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .feature-box {
+      background: white;
+      flex: 1;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.03);
+    }
+    .feature-box i {
+      font-size: 1.5rem;
+      color: #c7965b;
+      margin-bottom: 0.5rem;
+    }
+  </style></head>
+<body>
+<header><h1>О компании MEBELVDOM</h1></header><div class="gallery"><img src="Enscape Кровать 2.png"/><img src="Enscape Косметический столик.png"/><img src="Enscape Гардеробная.png"/><img src="Enscape Рабочий стол.png"/><img src="Enscape ТВ-зона.png"/></div>
+<nav style="text-align: center; margin-top: 1rem;">
+<button onclick="toggleMenu()" style="background: none; border: none; font-size: 1rem; font-weight: 600; cursor: pointer;">Продукция ▾</button>
+<a href="#about" style="margin-left: 1.5rem; text-decoration: none; font-weight: 600; color: #333;">О нас</a>
+<a href="#contacts" style="margin-left: 1.5rem; text-decoration: none; font-weight: 600; color: #333;">Контакты</a>
+<div id="productMenu" style="display:none; margin-top: 1rem;">
+<ul style="list-style:none; padding:0;">
+<li><a href="#">Кухни</a></li>
+<li><a href="#">Гардеробные</a></li>
+<li><a href="#">Спальни</a></li>
+<li><a href="#">Обувницы</a></li>
+</ul>
+</div>
+</nav>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("productMenu");
+  menu.style.display = menu.style.display === "none" ? "block" : "none";
+}
+</script>
+<div class="container">
+<main class="main-content">
+<div class="banner">
+<div>
+<h2>Кухонные гарнитуры в наличии</h2>
+<p>Большой ассортимент кухонь в готовых форматах, а также индивидуальные проекты под заказ.</p>
+<button>Открыть каталог</button>
+</div>
+</div>
+<div class="features">
+<div class="feature-box">
+<i class="fa fa-award"></i>
+<p>Гарантия качества</p>
+</div>
+<div class="feature-box">
+<i class="fa fa-truck-fast"></i>
+<p>Быстрая доставка</p>
+</div>
+<div class="feature-box">
+<i class="fa fa-headset"></i>
+</div>
+<div class="feature-box">
+<i class="fa fa-tags"></i>
+<p>Выгодные цены</p>
+</div>
+<div class="feature-box">
+<i class="fa fa-wallet"></i>
+<p>Удобная оплата</p>
+</div>
+</div>
+</main>
+</div>
+
+
+<footer style="background-color: #f1f1f1; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #555; border-top: 1px solid #ddd;">
+  Адрес: г. Ташкент, Узбекистан | Телефон: +998 90 123-45-67 | Консультации и заявки
+</footer>
+</body>
+</html>

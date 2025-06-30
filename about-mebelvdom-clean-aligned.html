@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mebelora — Главная</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      color: #2b2b2b;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      color: #c7965b;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      padding: 2rem;
+    }
+    .sidebar {
+      width: 220px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding: 1rem;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+    .sidebar li i {
+      font-size: 1.1rem;
+      color: #c7965b;
+    }
+    .main-content {
+      flex: 1;
+      padding-left: 2rem;
+    }
+    .banner {
+      background: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .banner h2 {
+      margin: 0 0 1rem 0;
+    }
+    .banner p {
+      margin: 0 0 1rem 0;
+    }
+    .banner button {
+      padding: 0.6rem 1.2rem;
+      background: #b25536;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .features {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .feature-box {
+      background: white;
+      flex: 1;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.03);
+    }
+    .feature-box i {
+      font-size: 1.5rem;
+      color: #c7965b;
+      margin-bottom: 0.5rem;
+    }
+  </style></head>
+<body>
+<header><h1>О компании MEBELVDOM</h1></header>
+<div class="container">
+<aside class="sidebar">
+<ul>
+<li><i class="fa fa-kitchen-set"></i> Кухонные гарнитуры</li>
+<li><i class="fa fa-warehouse"></i> Гардеробные</li>
+<li><i class="fa fa-couch"></i> Мебель для гостиной</li>
+<li><i class="fa fa-child"></i> Мебель для детской</li>
+<li><i class="fa fa-briefcase"></i> Офисная мебель</li>
+<li><i class="fa fa-door-closed"></i> Прихожие</li>
+<li><i class="fa fa-bath"></i> Ванные гарнитуры</li>
+<li><i class="fa fa-layer-group"></i> Стеллажи</li>
+<li><i class="fa fa-bed"></i> Кровати и матрасы</li>
+<li><i class="fa fa-chair"></i> Столы и стулья</li>
+<li><i class="fa fa-box"></i> Тумбы и комоды</li>
+</ul>
+</aside>
+<main class="container" style="max-width: 1200px; margin: 2rem auto; padding: 0 2rem; background-color: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+<div class="banner">
+<div>
+<h2 style="color: #c7965b; font-size: 1.5rem; margin-top: 2rem;">Кухонные гарнитуры в наличии</h2>
+<p style="font-size: 1.05rem; line-height: 1.7; color: #333;">Большой ассортимент кухонь в готовых форматах, а также индивидуальные проекты под заказ.</p>
+<button>Открыть каталог</button>
+</div>
+<img alt="kitchen" src="https://cdn-icons-png.flaticon.com/512/2769/2769339.png" width="120"/>
+</div>
+<div class="features">
+<div class="feature-box">
+<i class="fa fa-award"></i>
+<p style="font-size: 1.05rem; line-height: 1.7; color: #333;">Гарантия качества</p>
+</div>
+<div class="feature-box">
+<i class="fa fa-truck-fast"></i>
+<p style="font-size: 1.05rem; line-height: 1.7; color: #333;">Быстрая доставка</p>
+</div>
+<div class="feature-box">
+<i class="fa fa-headset"></i>
+</div>
+<div class="feature-box">
+<i class="fa fa-tags"></i>
+<p style="font-size: 1.05rem; line-height: 1.7; color: #333;">Выгодные цены</p>
+</div>
+<div class="feature-box">
+<i class="fa fa-wallet"></i>
+<p style="font-size: 1.05rem; line-height: 1.7; color: #333;">Удобная оплата</p>
+</div>
+</div>
+</main>
+</div>
+</body>
+</html>
