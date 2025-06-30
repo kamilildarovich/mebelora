@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Обувницы — Каталог</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  
+
+
+
+
+
+<style>
+  .dropdown-parent {
+    position: relative;
+  }
+  .dropdown-parent .dropdown-child {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+    border-radius: 6px;
+  }
+  .dropdown-parent .dropdown-child li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+  .dropdown-parent .dropdown-child li a:hover {
+    background: #f5f5f5;
+    color: #c7965b;
+  }
+  .dropdown-parent:hover .dropdown-child {
+    display: block;
+  }
+</style>
+
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Inter', sans-serif;
+  }
+  .logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #c7965b;
+    font-weight: bold;
+  }
+  .nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .nav-links li a:hover {
+    color: #c7965b;
+  }
+  .nav-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .profile-menu, .cart-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  .profile-icon, .cart-icon i {
+    font-size: 1.4rem;
+    color: #c7965b;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    border-radius: 6px;
+    z-index: 10;
+  }
+  .dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  .dropdown a:hover {
+    background: #f5f5f5;
+  }
+  .profile-menu:hover .dropdown {
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .nav-center {
+      justify-content: flex-start;
+    }
+    .nav-right {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  
+<header>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Mebelora</a></div>
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li class="dropdown-parent">
+          <a href="#">Продукция <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-child">
+            <li><a href="kitchens.html">Кухни</a></li>
+            <li><a href="wardrobes.html">Шкафы</a></li>
+            <li><a href="shoes.html">Обувницы</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="cart-icon">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="profile-menu">
+        <i class="fa-solid fa-user profile-icon"></i>
+        <div class="dropdown">
+          <a href="#">Профиль</a>
+          <a href="#">Мои заказы</a>
+          <a href="#">Выйти</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+</header>
+
+  <header>
+    <h1>Обувницы</h1>
+  </header>
+  <div class="product-grid">
+    
+        <div class="product">
+          <a href="обувницы1.html"><img src="https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg" alt="Обувницы модель 1"></a>
+          <h3>Обувницы модель 1</h3>
+          <p class="price">3 881 566 UZS</p>
+          <a href="обувницы1.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы2.html"><img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Обувницы модель 2"></a>
+          <h3>Обувницы модель 2</h3>
+          <p class="price">7 147 969 UZS</p>
+          <a href="обувницы2.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы3.html"><img src="https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg" alt="Обувницы модель 3"></a>
+          <h3>Обувницы модель 3</h3>
+          <p class="price">2 355 028 UZS</p>
+          <a href="обувницы3.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы4.html"><img src="https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg" alt="Обувницы модель 4"></a>
+          <h3>Обувницы модель 4</h3>
+          <p class="price">7 021 147 UZS</p>
+          <a href="обувницы4.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы5.html"><img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Обувницы модель 5"></a>
+          <h3>Обувницы модель 5</h3>
+          <p class="price">3 141 494 UZS</p>
+          <a href="обувницы5.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы6.html"><img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Обувницы модель 6"></a>
+          <h3>Обувницы модель 6</h3>
+          <p class="price">6 594 659 UZS</p>
+          <a href="обувницы6.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы7.html"><img src="https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg" alt="Обувницы модель 7"></a>
+          <h3>Обувницы модель 7</h3>
+          <p class="price">2 066 689 UZS</p>
+          <a href="обувницы7.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы8.html"><img src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg" alt="Обувницы модель 8"></a>
+          <h3>Обувницы модель 8</h3>
+          <p class="price">2 754 371 UZS</p>
+          <a href="обувницы8.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы9.html"><img src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg" alt="Обувницы модель 9"></a>
+          <h3>Обувницы модель 9</h3>
+          <p class="price">4 421 284 UZS</p>
+          <a href="обувницы9.html"><button>Подробнее</button></a>
+        </div>
+        
+        <div class="product">
+          <a href="обувницы10.html"><img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" alt="Обувницы модель 10"></a>
+          <h3>Обувницы модель 10</h3>
+          <p class="price">2 169 372 UZS</p>
+          <a href="обувницы10.html"><button>Подробнее</button></a>
+        </div>
+        
+  </div>
+</body>
+</html>
