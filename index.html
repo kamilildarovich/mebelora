@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mebelora — Главная</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #c7965b;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #c7965b;
+      font-size: 1.4rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .product {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .product p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mebelora</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Шкафы и комоды</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Шкаф-купе">
+          <p>Шкаф-купе — 2 400 000 UZS</p>
+        </div>
+        <div class="product">
+          <img src="https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg" alt="Комод">
+          <p>Комод — 1 150 000 UZS</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Кухни</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.pexels.com/photos/6566752/pexels-photo-6566752.jpeg" alt="Кухня 1">
+          <p>Кухня белая — 5 800 000 UZS</p>
+        </div>
+        <div class="product">
+          <img src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg" alt="Кухня 2">
+          <p>Кухня деревянная — 6 200 000 UZS</p>
+        </div>
+        <div class="product">
+          <img src="https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg" alt="Кухня 3">
+          <p>Кухня минимализм — 4 950 000 UZS</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Mebelora. Все права защищены.
+  </footer>
+</body>
+</html>
